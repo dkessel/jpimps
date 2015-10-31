@@ -5,7 +5,7 @@ import com.github.dkessel.jpimps.api.app.log.Logger;
 import com.github.dkessel.jpimps.api.plugin.PluginContainerInterface;
 import com.github.dkessel.jpimps.api.ui.ToolBoxUserInterface;
 
-public interface ToolBoxApplicationInterface {
+public interface JPimpsApplicationInterface {
 
 	/**
 	 * Returns a {@link Logger} for a given log category name.

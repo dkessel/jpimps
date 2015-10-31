@@ -1,13 +1,10 @@
-/**
- * 
- */
 package com.github.dkessel.jpimps.util;
 
 import java.io.*;
 
 public class Exceptions {
 
-	public static String throwableToString(final Throwable e) {
+	public static String toString(final Throwable e) {
 		final ByteArrayOutputStream baos = new ByteArrayOutputStream();
 		final PrintWriter pw = new PrintWriter(baos);
 		e.printStackTrace(pw);

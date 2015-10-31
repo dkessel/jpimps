@@ -12,7 +12,7 @@ import com.github.dkessel.jpimps.impl.app.log.*;
 import com.github.dkessel.jpimps.impl.plugin.*;
 import com.github.dkessel.jpimps.util.*;
 
-public class DefaultToolBoxApplication implements JPimpsApplicationInterface {
+public class DefaultJPimpsApplication implements JPimpsApplicationInterface {
 
 	private static final String CAT = "App";
 
@@ -23,7 +23,7 @@ public class DefaultToolBoxApplication implements JPimpsApplicationInterface {
 
 	private boolean running;
 
-	public DefaultToolBoxApplication(final LogPluginInterface lpi) {
+	public DefaultJPimpsApplication(final LogPluginInterface lpi) {
 		this.running = false;
 		this.pluginContainer = new DefaultPluginContainer(this, lpi);
 	}
@@ -36,7 +36,6 @@ public class DefaultToolBoxApplication implements JPimpsApplicationInterface {
 		return new SimpleLoggerAdapter(category, log);
 	}
 
-	@SuppressWarnings("hiding")
 	@Override
 	public void init(final ToolBoxUserInterface ui, final LogInterface log)
 			throws Exception {

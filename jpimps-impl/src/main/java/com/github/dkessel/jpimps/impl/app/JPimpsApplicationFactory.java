@@ -3,7 +3,7 @@ package com.github.dkessel.jpimps.impl.app;
 import com.github.dkessel.jpimps.api.app.*;
 import com.github.dkessel.jpimps.api.app.log.*;
 
-public class ToolBoxApplicationFactory {
+public class JPimpsApplicationFactory {
 
 	/**
 	 * Creates a new default {@link JPimpsApplicationInterface} implementation.
@@ -15,6 +15,6 @@ public class ToolBoxApplicationFactory {
 	 */
 	public static JPimpsApplicationInterface createDefaultToolBoxApplication(
 			final LogPluginInterface lpi) {
-		return new DefaultToolBoxApplication(lpi);
+		return new DefaultJPimpsApplication(lpi);
 	}
 }

@@ -1,4 +1,4 @@
-Java Poor Insert-Word-Here Man's Plugin System
+Java Plain Integrated Mini Plugin System
 ==============================================
 
 Modular miniature application framework, used by me for some years now.
